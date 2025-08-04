@@ -25,62 +25,84 @@ const HeroSection = () => {
             </span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
+          <h2 className="text-xl md:text-2xl text-gray-400 mb-4 font-medium">
             MERN Stack Developer & Full-Stack Engineer
           </h2>
           
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
             Passionate about creating exceptional web experiences with React, Node.js, 
             MongoDB, and Express. I build scalable applications that solve real-world problems.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="default" size="lg" className="group bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8]
-">
-              View My Work
-              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <Button
+                variant="default"
+                size="lg"
+                className="cursor-pointer text-black group bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] transform transition-transform duration-200 hover:scale-105"
+                onClick={() => {
+                    const section = document.getElementById("projects");
+                    if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    }
+                }}
+                >
+                View My Work
+                <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="default" size="lg">
-              <Mail className="w-4 h-4" />
-              Get In Touch
+
+            <Button
+                variant="ghost"
+                size="lg"
+                className="cursor-pointer border border-blue-400 text-blue-400 shadow-sm shadow-blue-400 transition-all duration-300 hover:shadow-none hover:bg-blue-400 hover:text-white"
+                onClick={() => {
+                    const section = document.getElementById("contact");
+                    if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    }
+                }}
+                >
+                <Mail className="w-4 h-4 mr-2" />
+                Get In Touch
             </Button>
+
+
           </div>
           
-          {/* Social Links */}
-          <div className="flex justify-center gap-6">
-            <a 
-              href="https://github.com/jekenmaharjan" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
-            >
-              <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a 
-              href="https://linkedin.com/in/jekenmaharjan" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
-            >
-              <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a 
-              href="https://twitter.com/jekenmaharjan" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
-            >
-              <Twitter className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a 
-              href="mailto:jeken.maharjan@email.com" 
-              className="group p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
-            >
-              <Mail className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-          </div>
+            {/* Social Links */}
+            <div className="flex justify-center gap-6">
+                <a 
+                href="https://github.com/jekenmaharjan" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 rounded-full shadow-sm shadow-blue-400 hover:shadow-xl backdrop-blur-sm border border-border/0 hover:border-blue-400/50 transition-all duration-300 hover:shadow-glow"
+                >
+                    <Github className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors" />
+                </a>
+                <a 
+                href="https://linkedin.com/in/jekenmaharjan" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 rounded-full shadow-sm shadow-blue-400 hover:shadow-xl backdrop-blur-sm border border-border/5 hover:border-blue-400/50 transition-all duration-300 hover:shadow-glow"
+                >
+                    <Linkedin className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors" />
+                </a>
+                <a 
+                href="https://twitter.com/jekenmaharjan" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 rounded-full shadow-sm shadow-blue-400 hover:shadow-xl backdrop-blur-sm border border-border/0 hover:border-blue-400/50 transition-all duration-300 hover:shadow-glow"
+                >
+                    <Twitter className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors" />
+                </a>
+                <a 
+                href="mailto:jeken.maharjan@email.com" 
+                className="group p-3 rounded-full shadow-sm shadow-blue-400 hover:shadow-xl backdrop-blur-sm border border-border/0 hover:border-blue-400/50 transition-all duration-300 hover:shadow-glow"
+                >
+                    <Mail className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors" />
+                </a>
+            </div>
+            </div>
         </div>
-      </div>
       
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">

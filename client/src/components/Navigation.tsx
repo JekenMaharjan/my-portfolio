@@ -61,7 +61,7 @@ const Navigation = () => {
               </button>
             ))}
             <a href="/resume.pdf" download>
-                <Button variant="default" size="sm" className="cursor-pointer border-1 border-blue-600 text-blue-600">
+                <Button variant="default" size="sm" className="cursor-pointer shadow-sm shadow-blue-400 border-1 border-blue-400 text-blue-400">
                     Resume
                 </Button>
             </a>    
