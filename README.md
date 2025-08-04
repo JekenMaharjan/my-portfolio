@@ -26,4 +26,4 @@ This is my personal full-stack portfolio built using the **MERN stack** with **N
 
 ```bash
 git clone https://github.com/JekenMaharjan/portfolio-nextjs.git
-cd portfolio-nextjs
+cd portfolio
