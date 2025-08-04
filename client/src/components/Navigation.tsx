@@ -43,7 +43,7 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-xl font-bold bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className="cursor-pointer text-xl font-bold bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent hover:scale-105 transition-transform"
           >
             Jeken Maharjan
           </button>
@@ -54,15 +54,17 @@ const Navigation = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-blue-500 transition-colors relative group cursor-pointer"
+                className="text-gray-400 hover:text-blue-500 transition-colors relative group cursor-pointer"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
-            <Button variant="default" size="sm" className="cursor-pointer border-1 border-blue-600 text-blue-600">
-                Resume
-            </Button>
+            <a href="/resume.pdf" download>
+                <Button variant="default" size="sm" className="cursor-pointer border-1 border-blue-600 text-blue-600">
+                    Resume
+                </Button>
+            </a>    
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,18 +82,20 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border/50">
             <div className="flex flex-col space-y-4 mt-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-left text-muted-foreground hover:text-primary transition-colors py-2"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <Button variant="default" size="sm" className="w-fit">
-                Resume
-              </Button>
+                {navItems.map((item) => (
+                    <button
+                    key={item.href}
+                    onClick={() => scrollToSection(item.href)}
+                    className="text-left text-muted-foreground hover:text-primary transition-colors py-2"
+                    >
+                    {item.label}
+                    </button>
+                ))}
+                <a href="/resume.pdf" download>
+                    <Button variant="default" size="sm" className="w-fit">
+                        Resume
+                    </Button>
+                </a>
             </div>
           </div>
         )}
