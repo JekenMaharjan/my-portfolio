@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/hooks/use-mobile.js", "src/components/AboutSection.js", "src/components/ContactSection.js", "src/components/HeroSection.js", "src/components/Navigation.js", "src/components/ProjectsSection.js", "src/components/SkillsSection.js", "src/app/page.js", "src/app/layout.js", "src/components/ui/badge.js", "src/components/ui/button.js", "src/components/ui/card.js", "src/components/ui/input.js", "src/components/ui/label.js", "src/components/ui/progress.js", "src/components/ui/textarea.js", "src/lib/utils.js"],
   "exclude": ["node_modules"]
 }
