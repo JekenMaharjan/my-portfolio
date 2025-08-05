@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-foreground text-white">Hi, I'm </span>
+            <span className="text-foreground text-white">Hi, I&apos;m </span>
             <span className="bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent">
               Jeken Maharjan
             </span>

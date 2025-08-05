@@ -11,11 +11,12 @@ import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
 
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
     const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState(null);
+    const [success, setSuccess] = useState<boolean | null>(null);
 
-    const sendEmail = (e) => {
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
@@ -23,14 +24,16 @@ const ContactSection = () => {
         .sendForm(
         "service_t29y87d",   // Replace with your EmailJS service ID
         "template_5wyyi4d",  // Replace with your EmailJS template ID
-        form.current,
+        form.current!,
         "UlpMzLIvkpJvDPgxf"       // Replace with your EmailJS user/public key
         )
         .then(
-        (result) => {
+        () => {
             setLoading(false);
             setSuccess(true);
-            e.target.reset();
+            if (form.current) {
+                form.current.reset();
+            }
         },
         (error) => {
             setLoading(false);
@@ -49,7 +52,7 @@ const ContactSection = () => {
                 Get In <span className="bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent">Touch</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                Ready to bring your ideas to life? Let's discuss your next project!
+                Ready to bring your ideas to life? Let&apos;s discuss your next project!
             </p>
             </div>
 
@@ -58,10 +61,10 @@ const ContactSection = () => {
             <div className="space-y-8">
                 <div>
                 <h3 className="text-2xl font-semibold mb-6 text-white">
-                    Let's Connect
+                    Let&apos;s Connect
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-8">
-                    I'm always excited to work on new projects and collaborate with amazing people. 
+                    I&apos;m always excited to work on new projects and collaborate with amazing people. 
                     Whether you have a project in mind or just want to chat about technology, 
                     feel free to reach out!
                 </p>
@@ -125,6 +128,7 @@ const ContactSection = () => {
                             name="name" // matches {{name}}
                             placeholder="Your Name" 
                             className="bg-gray-900/65 text-white border-gray-600"
+                            required
                             />
                         </div>
                         <div className="space-y-2">
@@ -135,6 +139,7 @@ const ContactSection = () => {
                             type="email" 
                             placeholder="your.email@example.com"
                             className="bg-gray-900/65 text-white border-gray-600"
+                            required
                             />
                         </div>
                         </div>
@@ -146,6 +151,7 @@ const ContactSection = () => {
                             name="title" // matches {{title}} (used title in EmailJS)
                             placeholder="Project Discussion"
                             className="bg-gray-900/65 text-white border-gray-600"
+                            required
                         />
                         </div>
                         
@@ -156,6 +162,7 @@ const ContactSection = () => {
                             name="message" // matches {{message}}
                             placeholder="Tell me about your project or idea..."
                             className="bg-gray-900/65 min-h-[120px] text-white border-gray-600"
+                            required
                         />
                         </div>
                         

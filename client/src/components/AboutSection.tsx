@@ -37,7 +37,7 @@ const AboutSection = () => {
             About <span className="bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            I'm a passionate MERN stack developer with a love for creating innovative web solutions 
+            I&apos;m a passionate MERN stack developer with a love for creating innovative web solutions 
             that make a difference.
           </p>
         </div>
