@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/hooks/use-mobile.js", "src/components/AboutSection.js", "src/components/ContactSection.js", "src/components/HeroSection.js", "src/components/Navigation.js", "src/components/ProjectsSection.js", "src/components/SkillsSection.js", "src/app/page.js", "src/app/layout.js", "src/components/ui/badge.js", "src/components/ui/button.js", "src/components/ui/card.js", "src/components/ui/input.js", "src/components/ui/label.js", "src/components/ui/progress.js", "src/components/ui/textarea.js", "src/lib/utils.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/hooks/use-mobile.tsx", "src/components/AboutSection.tsx", "src/components/ContactSection.tsx", "src/components/HeroSection.tsx", "src/components/Navigation.tsx", "src/components/ProjectsSection.tsx", "src/components/SkillsSection.tsx", "src/app/page.tsx", "src/app/layout.tsx", "src/components/ui/badge.tsx", "src/components/ui/button.tsx", "src/components/ui/card.tsx", "src/components/ui/input.tsx", "src/components/ui/label.tsx", "src/components/ui/progress.tsx", "src/components/ui/textarea.tsx", "src/lib/utils.ts"],
   "exclude": ["node_modules"]
 }
