@@ -35,7 +35,7 @@ const ProjectsSection = () => {
         technologies: ["JavaScript", "React", "CSS", "HTML"],
         githubUrl: "https://github.com/JekenMaharjan/Advance-Calculator",
         liveUrl: "https://jekode-advance-calculator.vercel.app/",
-        featured: true
+        featured: false
     },
     {
         title: "Lottery Game",
