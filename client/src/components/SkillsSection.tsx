@@ -1,36 +1,34 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+import { FaReact, FaBootstrap, FaNodeJs, FaHtml5, FaCss3Alt, FaPhp, FaLaravel, FaDocker, FaGitAlt } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiShadcnui, SiExpress, SiPostman, SiMongodb, SiMysql, SiFirebase, SiC, SiCplusplus, SiSharp, SiPython, SiGithub } from "react-icons/si";
+
 
 const SkillsSection = () => {
   const skillCategories = [
     {
-      category: "Frontend Stack",
       skills: [
-        { name: "React/Next.js", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "JavaScript", level: 82 },
-        { name: "Tailwind CSS", level: 88 },
-        { name: "HTML/CSS", level: 90 }
-      ]
-    },
-    {
-      category: "Backend Stack",
-      skills: [
-        { name: "Node.js", level: 88 },
-        { name: "Express.js", level: 85 },
-        { name: "MongoDB", level: 87 },
-        { name: "REST APIs", level: 88 },
-        { name: "PHP/Laravel", level: 75 }
-      ]
-    },
-    {
-      category: "Tools & Others",
-      skills: [
-        { name: "Git/GitHub", level: 90 },
-        { name: "Postman", level: 85 },
-        { name: "Firebase", level: 80 },
-        { name: "Figma/Design", level: 78 },
-        { name: "Docker", level: 40 }
+        { name: "React", icon: <FaReact className="text-cyan-400" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+        { name: "ShadCN UI", icon: <SiShadcnui className="text-white" /> },
+        { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
+        { name: "Express.js", icon: <SiExpress className="text-gray-400" /> },
+        { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+        { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+        { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+        { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+        { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+        { name: "PHP", icon: <FaPhp className="text-indigo-500" /> },
+        { name: "Laravel", icon: <FaLaravel className="text-red-500" /> },
+        { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
+        { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
+        { name: "C", icon: <SiC className="text-blue-500" /> },
+        { name: "C++", icon: <SiCplusplus className="text-blue-400" /> },
+        { name: "C#", icon: <SiSharp className="text-purple-500" /> },
+        { name: "Python", icon: <SiPython className="text-blue-400" /> },
+        { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+        { name: "GitHub", icon: <SiGithub className="text-white" /> }
       ]
     }
   ];
@@ -47,49 +45,43 @@ const SkillsSection = () => {
             </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-            {skillCategories.map((category, index) => (
-                <Card key={index} className="bg-gray-700/60 border-border/50 hover:shadow-card transition-all duration-300">
-                <CardHeader>
-                    <CardTitle className="text-xl font-semibold text-center text-blue-500">
-                    {category.category}
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                    {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
-                        <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-white">
-                            {skill.name}
-                        </span>
-                        <span className="text-sm text-gray-400">
-                            {skill.level}%
-                        </span>
-                        </div>
-                        <Progress 
-                        value={skill.level} 
-                        className="h-2 bg-gray-600 [&>div]:bg-blue-500/80"
-                        />
-                    </div>
-                    ))}
-                </CardContent>
-                </Card>
-            ))}
+            <div>
+                {skillCategories.map((category, index) => (
+                    <Card key={index} className="bg-gray-700/60 border-border/50 hover:shadow-card transition-all duration-300 p-10">
+                        <CardContent className="grid grid-cols-7 items-center justify-center gap-y-10 w-full h-full">
+                            {category.skills.map((skill, skillIndex) => (
+                                <div key={skillIndex} className="flex flex-col items-center justify-center hover:scale-130 transition-all duration-300 gap-2">
+                                    {/* Skill item grid */}
+                                    {/* Icon */}
+                                    <span className="justify-center text-7xl">
+                                        {skill.icon}
+                                    </span>
+
+                                    {/* Skill Name */}
+                                    <span className="text-md text-white">
+                                        {skill.name}
+                                    </span>
+                                </div>
+                            ))}
+                        </CardContent>
+                    </Card>
+                ))}
             </div>
 
             {/* MERN Stack Highlight */}
             <div className="mt-16 text-center">
-            <Card className="max-w-4xl mx-auto bg-gray-700/40 border-gray-100/40">
-                <CardContent className="p-8">
+            <Card className="max-w-4xl mx-auto bg-gray-700/40 border-border/50 hover:shadow-card transition-all duration-300">
+                <CardContent className="p-8 flex flex-col gap-2">
                 <h3 className="text-2xl font-bold mb-4 text-blue-500">MERN Stack Expertise</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {[
-                    { name: "MongoDB", desc: "NoSQL Database" },
-                    { name: "Express.js", desc: "Backend Framework" },
-                    { name: "React", desc: "Frontend Library" },
-                    { name: "Node.js", desc: "Runtime Environment" }
+                    { name: "MongoDB", icon: <SiMongodb className="text-green-400" />, desc: "NoSQL Database" },
+                    { name: "Express.js", icon: <SiExpress className="text-gray-400" />, desc: "Backend Framework" },
+                    { name: "React", icon: <FaReact className="text-cyan-400" />, desc: "Frontend Library" },
+                    { name: "Node.js", icon: <FaNodeJs className="text-green-500" />, desc: "Runtime Environment" }
                     ].map((tech, index) => (
-                    <div key={index} className="text-center">
+                    <div key={index} className="flex flex-col text-center items-center">
+                        <span className="justify-center text-6xl">{tech.icon}</span>
                         <div className="text-lg font-semibold text-white">{tech.name}</div>
                         <div className="text-sm text-gray-400">{tech.desc}</div>
                     </div>
