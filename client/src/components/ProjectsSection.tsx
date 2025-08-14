@@ -33,8 +33,8 @@ const ProjectsSection = () => {
         title: "Calculator App",
         description: "Functional calculator application with clean UI and support for basic arithmetic operations.",
         technologies: ["JavaScript", "React", "CSS", "HTML"],
-        githubUrl: "https://github.com/jekenmaharjan/calculator",
-        liveUrl: "/maintenance",
+        githubUrl: "https://github.com/JekenMaharjan/Advance-Calculator",
+        liveUrl: "https://jekode-advance-calculator.vercel.app/",
         featured: true
     },
     {
