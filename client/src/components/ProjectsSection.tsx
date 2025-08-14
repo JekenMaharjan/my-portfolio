@@ -6,19 +6,19 @@ import { Github, ExternalLink } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-        title: "OfficeCare E-Commerce",
-        description: "Full-stack e-commerce platform for office supplies with user authentication, cart functionality, and admin dashboard.",
-        technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-        githubUrl: "https://github.com/jekenmaharjan/officecare",
-        liveUrl: "/maintenance",
+        title: "Portfolio Website",
+        description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations and optimized performance.",
+        technologies: ["React", "Next.js", "Tailwind CSS", "ShadCN", "TypeScript"],
+        githubUrl: "https://github.com/jekenmaharjan/my-portfolio",
+        liveUrl: "/",
         featured: true
     },
     {
-        title: "Portfolio Website",
-        description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations and optimized performance.",
-        technologies: ["React", "Tailwind CSS", "TypeScript", "Vite"],
-        githubUrl: "https://github.com/jekenmaharjan/my-portfolio",
-        liveUrl: "/",
+        title: "OfficeCare E-Commerce",
+        description: "Full-stack e-commerce platform for office supplies with user authentication, cart functionality, and admin dashboard.",
+        technologies: ["React", "Next.js", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+        githubUrl: "https://github.com/jekenmaharjan/officecare",
+        liveUrl: "/maintenance",
         featured: true
     },
     {
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
         technologies: ["JavaScript", "React", "CSS", "HTML"],
         githubUrl: "https://github.com/jekenmaharjan/calculator",
         liveUrl: "/maintenance",
-        featured: false
+        featured: true
     },
     {
         title: "Lottery Game",
