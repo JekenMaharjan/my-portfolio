@@ -26,7 +26,7 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-400 mb-4 font-medium">
-            MERN Stack Developer & Full-Stack Engineer
+            MERN Stack Developer
           </h2>
           
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
