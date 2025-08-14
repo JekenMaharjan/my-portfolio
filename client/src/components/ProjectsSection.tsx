@@ -18,7 +18,7 @@ const ProjectsSection = () => {
         description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations and optimized performance.",
         technologies: ["React", "Tailwind CSS", "TypeScript", "Vite"],
         githubUrl: "https://github.com/jekenmaharjan/my-portfolio",
-        liveUrl: "https://jekenmaharjan.com.np/",
+        liveUrl: "/",
         featured: true
     },
     {
