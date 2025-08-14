@@ -60,7 +60,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-20 px-6 bg-gray-900">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto" data-aos="fade-up" data-aos-delay="1">
             <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">
                 Featured <span className="bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent">Projects</span>
