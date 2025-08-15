@@ -41,8 +41,8 @@ const ProjectsSection = () => {
         title: "Lottery Game",
         description: "Interactive lottery number generator game with random number generation and winning logic.",
         technologies: ["JavaScript", "React", "CSS", "HTML"],
-        githubUrl: "https://github.com/jekenmaharjan/lottery-game",
-        liveUrl: "/maintenance",
+        githubUrl: "https://github.com/JekenMaharjan/Lottery-Game",
+        liveUrl: "https://lottery-game-jekode.vercel.app/",
         featured: false
     },
     {
