@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     {
         title: "Minesweeper Game",
         description: "Classic Minesweeper game built with JavaScript featuring different difficulty levels and responsive design.",
-        technologies: ["JavaScript", "HTML", "CSS", "React"],
+        technologies: ["JavaScript", "React", "Tailwind CSS", "Next.js"],
         githubUrl: "https://github.com/jekenmaharjan/minesweeper",
         liveUrl: "/maintenance",
         featured: false
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
     {
         title: "Calculator App",
         description: "Functional calculator application with clean UI and support for basic arithmetic operations.",
-        technologies: ["JavaScript", "React", "CSS", "HTML"],
+        technologies: ["JavaScript", "React", "Tailwind CSS", "Next.js"],
         githubUrl: "https://github.com/JekenMaharjan/Advance-Calculator",
         liveUrl: "https://advance-calculator-jekode.vercel.app/",
         featured: false
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
     {
         title: "Lottery Game",
         description: "Interactive lottery number generator game with random number generation and winning logic.",
-        technologies: ["JavaScript", "React", "CSS", "HTML"],
+        technologies: ["JavaScript", "React", "Tailwind CSS", "Next.js"],
         githubUrl: "https://github.com/JekenMaharjan/Lottery-Game",
         liveUrl: "https://lottery-game-jekode.vercel.app/",
         featured: false
