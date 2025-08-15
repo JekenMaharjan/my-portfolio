@@ -34,7 +34,7 @@ const ProjectsSection = () => {
         description: "Functional calculator application with clean UI and support for basic arithmetic operations.",
         technologies: ["JavaScript", "React", "CSS", "HTML"],
         githubUrl: "https://github.com/JekenMaharjan/Advance-Calculator",
-        liveUrl: "https://jekode-advance-calculator.vercel.app/",
+        liveUrl: "https://advance-calculator-jekode.vercel.app/",
         featured: false
     },
     {
