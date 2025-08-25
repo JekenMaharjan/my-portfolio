@@ -161,7 +161,7 @@ const ProjectsSection = () => {
 
             {/* GitHub CTA */}
             <div className="text-center">
-            <Button variant="default" size="lg" className="bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] text-black hover:scale-105" asChild>
+            <Button variant="default" size="lg" className="bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] text-black hover:scale-105 transition-all duration-300 will-change-transform" asChild>
                 <a href="https://github.com/jekenmaharjan" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 text-black" />
                 View All Projects on GitHub

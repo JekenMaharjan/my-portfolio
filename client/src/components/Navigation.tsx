@@ -43,8 +43,9 @@ const Navigation = () => {
             {/* Logo */}
             <button
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="cursor-pointer text-xl font-bold bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent hover:scale-105 transition-transform"
+                className="flex items-center justify-center gap-5 cursor-pointer text-xl font-bold bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 will-change-transform"
             >
+                <img src="Logo.png" alt="Profile Logo" className="h-10 w-10" />
                 Jeken Maharjan
             </button>
 
@@ -91,7 +92,7 @@ const Navigation = () => {
                         </button>
                     ))}
                     <a href="/resume.pdf" download>
-                        <Button variant="default" size="sm" className="cursor-pointer shadow-sm shadow-blue-400 hover:shadow-md hover:scale-102 border-1 border-blue-400 text-blue-400">
+                        <Button variant="default" size="sm" className="cursor-pointer shadow-sm shadow-blue-400 hover:shadow-md hover:scale-105 transition-transform transition-shadow duration-300 will-change-transform border-1 border-blue-400 text-blue-400">
                             Resume
                         </Button>
                     </a>

@@ -26,7 +26,7 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-400 mb-4 font-medium">
-            MERN Stack Developer
+            Full-Stack Developer
           </h2>
           
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -38,7 +38,7 @@ const HeroSection = () => {
             <Button
                 variant="default"
                 size="lg"
-                className="cursor-pointer text-black group bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] transform transition-transform duration-200 hover:scale-105"
+                className="cursor-pointer text-black group bg-gradient-to-r from-[#3ABEFF] to-[#CB52F8] hover:scale-105 transition-all duration-300 will-change-transform"
                 onClick={() => {
                     const section = document.getElementById("projects");
                     if (section) {
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <Button
                 variant="ghost"
                 size="lg"
-                className="cursor-pointer border border-blue-400 text-blue-400 shadow-sm shadow-blue-400 transition-all duration-300 hover:shadow-none hover:bg-blue-400 hover:text-white"
+                className="cursor-pointer border border-blue-400 text-blue-400 shadow-sm shadow-blue-400 hover:scale-105 transition-all duration-300 will-change-transform hover:shadow-none hover:bg-blue-400 hover:text-white"
                 onClick={() => {
                     const section = document.getElementById("contact");
                     if (section) {

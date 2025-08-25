@@ -50,7 +50,7 @@ const SkillsSection = () => {
                     <Card key={index} className="bg-gray-700/60 border-border/50 hover:shadow-card transition-all duration-300 p-10">
                         <CardContent className="grid grid-cols-2 md:grid-cols-7 items-center justify-center gap-y-10">
                             {category.skills.map((skill, skillIndex) => (
-                                <div key={skillIndex} className="flex flex-col items-center justify-center hover:scale-130 transition-all duration-300 gap-2">
+                                <div key={skillIndex} className="flex flex-col items-center justify-center gap-2 hover:scale-130 transition-all duration-300 will-change-transform">
                                     {/* Skill item grid */}
                                     {/* Icon */}
                                     <span className="justify-center text-7xl">
