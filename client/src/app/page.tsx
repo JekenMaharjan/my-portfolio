@@ -24,7 +24,7 @@ const Index = () => {
             <ProjectsSection />
             <ContactSection />
         </div>
-  );
+    );
 };
 
 export default Index;
