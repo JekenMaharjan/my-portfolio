@@ -7,12 +7,9 @@ This is my personal full-stack portfolio built using the **MERN stack** with **N
 ## 🚀 Tech Stack
 
 - **Frontend**: React (with Next.js)
-- **Backend**: (If used) Node.js, Express.js
-- **Database**: (If used) MongoDB
 - **Styling**: Tailwind CSS, ShadCN UI
 - **Icons**: Lucide React
-- **Authentication**: (If used) NextAuth / JWT
-- **Deployment**: Vercel (Frontend) + Render / Railway / MongoDB Atlas (Backend)
+- **Deployment**: Vercel (Frontend)
 
 ---
 
