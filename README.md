@@ -20,9 +20,7 @@ This is my personal full-stack portfolio built using the **MERN stack** with **N
 
 - Fully responsive design
 - About Me & Skills section
-- Dynamic project showcase (from MongoDB)
 - Contact info or form
-- Dark mode toggle (optional)
 
 ---
 
